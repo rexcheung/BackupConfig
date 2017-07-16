@@ -1,0 +1,25 @@
+" ignore case when searching
+ set ignorecase
+  
+" When searching try to be smart about cases 
+set smartcase
+   
+" Highlight search results
+set hlsearch
+      
+" Makes search act like search in modern browsers
+set incsearch 
+
+set clipboard=unnamedplus
+" set clipboard=unnamed
+
+map <[> :action MethodUp<CR>
+map <]> :action MethodDown<CR>
+map <C-Up> :action EditorMoveUpAndScroll<CR>
+map <C-Down> :action EditorMoveDownAndScroll<CR>
+map <C-Left> :action EditorPreviousWord<CR>
+map <C-Right> :action EditorNextWord<CR>
+map <A-S-,> :action VimWindowLeft<CR>
+map <A-S-.> :action VimWindowRight<CR>
+
+" test
